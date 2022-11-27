@@ -49,15 +49,57 @@
     </nav>
     <br>
     <!-- Ciclo formativo>Modulo profesional>RA>CE -->
+    <center><h1>Título CE Escogido</h1></center> <!--TODO Centrado, ya lo haremos con text-align -->
+    <hr>
+    <!-- Migas de pan -->
+    <center><p><a href="Ciclos_Formativos.html">Ciclos formativos</a>/<a href="Módulo_profesional.html">Módulo profesional escogido</a>/<a href="ce.html">Título RA escogido</a></p></center>
     <!-- Lista de Unidades -->
-    <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active">
-            Cras justo odio
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-        <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-        <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-        <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+    <!-- Formulario -->
+    <div style="margin-left: 20%;">
+        <form>
+            <!--Etiqueta fieldset-->
+            <fieldset>
+                <!--Etiqueta legend-->
+                <legend> Editar Título CE</legend>
+                <br><br>
+                <div class="row">
+                        <div class="col-md-4">
+                            <!--Etiqueta label-->
+                            <label for="modulos">Módulo:</label>
+                            <!--Etiqueta input tipo texto-->
+                            <select id="modulos" style="width: 300px;">
+                                <option value="Modulo1">1º Módulo</option> 
+                                <option value="Modulo2">2º Módulo</option>
+                                <option value="Modulo3" selected>3º Módulo</option> 
+                                <option value="Modulo4">4º Módulo</option>
+                                <option value="Modulo5">5º Módulo</option> 
+                                <option value="Modulo6">6º Módulo</option>
+                            </select><br><br>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="CE">Nombre CE: </label>
+                            <!--Etiqueta input tipo email-->
+                            <input id="CE" type="text" placeholder="Escribe el nombre de tu CE" value="Nombre actual del CE seleccionado" style="width:300px"><br><br>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="DescripcionCE">Descripcion del CE</label>
+                        <textarea class="form-control" id="DescripcionCE" rows="3"  placeholder="Describe tu CE">Descripción actual del CE seleccionado</textarea>
+                    </div>
+                </div>
+                
+                
+            </fieldset>  
+            <input type="submit" value="Actualizar" />
+            <input type="submit" value="Cancelar"/>
+        </form><br><br>
+        <div>
+            <a class="btn btn-xs btn-info float-right" href="Módulo_profesional.html">
+                Volver a los Módulos profesionales
+            </a>
+        </div>
+        <br><br>
     </div>
     <br>
     <!-- Footer -->
